@@ -1,0 +1,27 @@
+{
+  "name": "yolodice-sentinel",
+  "version": "0.1.0",
+  "description": "Watches bets for users to verify them automatically",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGBKey/yolodice-sentinel.git"
+  },
+  "keywords": [
+    "yolodice",
+    "verifier"
+  ],
+  "author": "RGBKey <rgbkey@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RGBKey/yolodice-sentinel/issues"
+  },
+  "homepage": "https://github.com/RGBKey/yolodice-sentinel#readme",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "yolodice-api": "^1.0.0"
+  }
+}
