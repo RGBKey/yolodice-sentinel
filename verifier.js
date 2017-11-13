@@ -18,6 +18,7 @@ class Verifier {
      * @param {!string} serverSeed - The server seed
      * @param {!string} clientSeed - The client seed
      * @param {!number} nonce - The nonce
+     * @returns {string} A hex string containing 128 hex digits
      */
     static getHashFromSeeds(serverSeed, clientSeed, nonce) {
         let hash = crypto.createHmac('sha512', Buffer.from(serverSeed, 'hex'));
@@ -28,6 +29,7 @@ class Verifier {
     /**
      * Returns a number corresponding to the result from the hash in the range [0,1000000)
      * @param {!string} hash 
+     * @returns {number} The roll number
      */
     static getRollFromHash(hash) {
         let roll = parseInt(hash.substr(0, CHUNK_SIZE), HEX_RADIX);
